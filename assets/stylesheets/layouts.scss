@@ -1,15 +1,8 @@
 @import "common/admin/admin_base";
 
-body {
-  background-color: #fbfeff;
-}
 
 .d-header {
   z-index: 999;
-}
-
-.content-wrapper {
-  text-align: center;
 }
 
 aside.sidebar {
@@ -97,34 +90,9 @@ aside.sidebar {
       margin-bottom: 0;
     }
 
-    .topic-list-bottom h3, #suggested-topics h3 {
-      font-size: 14px;
-    }
 
     .topic-list-bottom {
       margin: 10px;
-    }
-
-    #topic-title {
-      position: relative;
-      border-left: 1px solid dark-light-diff($primary, $secondary, 90%, -65%);
-      border-right: 1px solid dark-light-diff($primary, $secondary, 90%, -65%);
-    }
-
-    .container.list-container {
-      width: 100%;
-      background-color: $secondary;
-      border: 1px solid dark-light-diff($primary, $secondary, 90%, -65%);
-      border-radius: 4px;
-    }
-
-    .container.posts {
-      border-left: 1px solid dark-light-diff($primary, $secondary, 90%, -65%);
-      border-right: 1px solid dark-light-diff($primary, $secondary, 90%, -65%);
-      border-bottom: 1px solid dark-light-diff($primary, $secondary, 90%, -65%);
-      background-color: $secondary;
-      border-radius: 0 0 4px 4px;
-      width: 100%;
     }
   }
 
@@ -149,51 +117,6 @@ aside.sidebar {
   &.nav-menu-enabled {
     ol.category-breadcrumb {
       margin: 0;
-    }
-  }
-}
-
-.topic-header-navigation {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  border-top: 1px solid dark-light-diff($primary, $secondary, 90%, -65%);
-  border-left: 1px solid dark-light-diff($primary, $secondary, 90%, -65%);
-  border-right: 1px solid dark-light-diff($primary, $secondary, 90%, -65%);
-  border-radius: 4px 4px 0 0;
-  background-color: $secondary;
-  padding-top: 15px;
-
-  .header-nav-left, .header-nav-right {
-    margin: 0 15px;
-
-    .topic-title {
-      text-overflow: ellipsis;
-      white-space: nowrap;
-      display: inline-block;
-      vertical-align: middle;
-      overflow: hidden;
-      max-width: 200px;
-    }
-
-    .fa {
-      vertical-align: middle;
-    }
-  }
-
-  .header-nav-left {
-    float: left;
-
-    .fa {
-      margin-right: 7px;
-    }
-  }
-
-  .header-nav-right {
-    float: right;
-
-    .fa {
-      margin-left: 7px;
     }
   }
 }
@@ -230,142 +153,6 @@ aside.sidebar {
 
   .widget-disabled {
     font-style: italic;
-  }
-}
-
-.main-content .nav-drop {
-  a {
-    color: $primary;
-    font-size: 1.143em;
-  }
-
-  .selected-nav-item {
-    display: inline-block;
-    padding: 5px 8px;
-    line-height: 20px;
-    background-color: $quaternary !important;
-    cursor: pointer;
-
-    a {
-      color: $secondary;
-    }
-  }
-
-  a.nav-dropdown-btn {
-    display: inline-block;
-    margin-left: -4px;
-    padding: 0 5px;
-    line-height: 30px;
-    width: 13px;
-    color: $secondary;
-    background-color: $quaternary;
-
-    .fa-caret-right {
-      margin-left: 2px;
-    }
-  }
-
-  .nav-dropdown-menu {
-    overflow-x: hidden;
-    overflow-y: auto;
-    position: absolute;
-    border: 1px solid dark-light-diff($primary, $secondary, 90%, -60%);
-    background-color: $secondary;
-    z-index: 100;
-
-    a {
-      display: block;
-      border: none;
-      padding: 5px 12px;
-      line-height: 20px;
-      transition: background .15s;
-
-      &:hover {
-        color: $quaternary;
-        background-color: dark-light-diff($quaternary, $secondary, 70%, -70%);
-      }
-    }
-  }
-}
-
-.main-content.navigation-disabled {
-  .topic-list > tbody > tr:first-of-type {
-    border-top: 1px solid dark-light-diff($primary, $secondary, 90%, -65%);
-  }
-}
-
-.main-content.header-disabled {
-  .category-list tbody tr:first-of-type {
-    border-top: 1px solid dark-light-diff($primary, $secondary, 90%, -65%);
-  }
-}
-
-#list-area .main-content.tags {
-  .tag-notification-menu, .dropdown-toggle {
-    margin: 0;
-  }
-
-  .admin-tag {
-    margin: 0 8px;
-  }
-
-  .tag-show-heading {
-    margin: 7px 7px 0 7px;
-  }
-}
-
-.top-lists {
-  padding: 0 7px;
-}
-
-.topic-list-bottom {
-  margin: 20px 10px;
-}
-
-#list-area {
-  margin-bottom: 0;
-}
-
-.topic-area #suggested-topics {
-  margin-bottom: 0;
-}
-
-.widget-category-settings .select2-container {
-  width: 100%;
-}
-
-.edit-category.backup {
-  position: fixed;
-  bottom: 10px;
-  right: 10px;
-}
-
-#main-outlet > .category-admin-menu {
-  position: fixed;
-  top: 120px;
-  right: 10px;
-}
-
-.pref-location {
-  display: none;
-}
-
-.map-category-settings {
-  background-color: dark-light-diff($primary, $secondary, 90%, -65%);
-  padding: 5px;
-
-  .field-title {
-    font-size: 16px;
-  }
-
-  input[type="file"] {
-    line-height: initial;
-    margin-bottom: 10px;
-  }
-
-  .current-geojson {
-    display: inline-block;
-    margin-right: 5px;
   }
 }
 
